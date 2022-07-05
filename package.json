@@ -1,0 +1,26 @@
+{
+  "name": "urid",
+  "version": "1.0.0",
+  "description": "generate unique id",
+  "main": "index.js",
+  "type": "module",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bansal/urid.git"
+  },
+  "keywords": [
+    "crypto",
+    "gurid",
+    "id",
+    "random",
+    "urid",
+    "unique-id",
+    "uurid"
+  ],
+  "author": "Jiten Bansal (github/bansal)",
+  "license": "MIT"
+}
