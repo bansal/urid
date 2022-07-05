@@ -1,7 +1,7 @@
 {
   "name": "urid",
-  "version": "1.0.0",
-  "description": "generate unique id",
+  "version": "1.0.1",
+  "description": "generate unique random id",
   "main": "index.js",
   "type": "module",
   "types": "index.d.ts",
@@ -14,12 +14,12 @@
   },
   "keywords": [
     "crypto",
-    "gurid",
+    "guid",
     "id",
     "random",
-    "urid",
+    "uid",
     "unique-id",
-    "uurid"
+    "uuid"
   ],
   "author": "Jiten Bansal (github/bansal)",
   "license": "MIT"
