@@ -1,20 +1,18 @@
 'use strict'
 
 const DEFAULT_SIZE = 16;
-const NUM_CHARSET = '0123456789';
-const ALPHA_CHARSET = 'abcdefghijklmnopqrstuvwxyz';
-const ALPHANUM_CHARSET = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVXZ';
+const DEFAULT_CHARSET = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVXZ';
 
 function getChars(chars){
     switch (chars){
-        case 'num': return NUM_CHARSET;
-        case 'alpha': return ALPHA_CHARSET;
-        case 'alphanum': return ALPHANUM_CHARSET;
+        case 'num': return '0123456789';
+        case 'alpha': return 'abcdefghijklmnopqrstuvwxyz';
+        case 'alphanum': return '0123456789abcdefghijklmnopqrstuvwxyz';
         default: return chars;
     }
 }
 
-function generateurid(length, chars) {
+function generateUrid(length, chars) {
     let id = '';
     for (let i = 0; i < length; i++) {
         id += chars[Math.floor(Math.random() * chars.length)];
@@ -22,12 +20,12 @@ function generateurid(length, chars) {
     return id;
 }
 
-export default function urid(size = DEFAULT_SIZE, charset = ALPHANUM_CHARSET) {
+export default function urid(size = DEFAULT_SIZE, charset = DEFAULT_CHARSET) {
     let length = size;
     let chars = charset;
     if(arguments.length === 1 && typeof size === 'string'){
         length = DEFAULT_SIZE;
         chars = size;
     }
-    return generateurid(length, getChars(chars));
+    return generateUrid(length, getChars(chars));
   }
