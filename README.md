@@ -1,6 +1,6 @@
-# Generate urid
+# Generate unique random id
 
-Generate unique/random id based on the given size and characterset. Default id size is 10 characters and it is randomly generated from [0-9a-bAB] characters
+Generate unique/random id based on the given size and character set. Default id size is 16 characters and it is randomly generated from [0-9a-bA-B] characters.
 
 ## Install
 
@@ -18,14 +18,25 @@ const id = urid();
 
 ```js
 
-const id = urid();
-const id = urid(8);
-const id = urid(16);
-const id = urid('num');
-const id = urid('alpha');
-const id = urid('alphanum');
-const id = urid(12, 'alpha');
-const id = urid(6, '0123456789ABCDEF'); // use custom characterset
-const id = urid('0123456789ABCDEF'); // use custom characterset
+const id = urid(); // qRpky22nKJ4vkbFZ
+
+// Set the size
+const id = urid(8); //ZDJLC0Zq
+
+// Use the character set
+const id = urid('num'); // 4629118294212196
+const id = urid('alpha'); // ebukmhyiagonmmbm
+const id = urid('alphanum'); // nh9glmi1ra83979b
+
+// Use size with character set
+const id = urid(12, 'alpha'); // wwfkvpkevhbg
+
+// use custom character set
+const id = urid(6, '0123456789ABCDEF'); // EC58F3
+const id = urid('0123456789ABCDEF'); // 6C11044E128FB44B
 
 ```
+
+## LICENSE
+
+MIT
