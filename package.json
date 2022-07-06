@@ -1,6 +1,6 @@
 {
   "name": "urid",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "generate unique random id",
   "main": "index.js",
   "type": "module",
